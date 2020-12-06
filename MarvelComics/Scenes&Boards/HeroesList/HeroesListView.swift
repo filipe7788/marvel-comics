@@ -1,4 +1,5 @@
 import SwiftUI
+import URLImage
 
 struct HeroesListView: View {
   let heroes: [HeroResume]
@@ -25,7 +26,14 @@ struct HeroesListView: View {
   private var heroList: some View {
     ForEach(heroes) { hero in
       VStack {
-          Text(hero.name ?? "Title not found").font(.title)
+        if let url = hero.thumbnail.url {
+          URLImage(url: url) { image in
+              image
+              .resizable()
+              .aspectRatio(contentMode: .fit)
+          }
+        }
+        Text(hero.name ?? "Title not found").font(.title)
       }
       .frame(idealWidth: .infinity, maxWidth: .infinity, alignment: .center)
       .onAppear {

@@ -1,0 +1,34 @@
+PODS:
+  - URLImage (2.1.11):
+    - URLImage/Common (= 2.1.11)
+    - URLImage/DownloadManager (= 2.1.11)
+    - URLImage/FileIndex (= 2.1.11)
+    - URLImage/ImageDecoder (= 2.1.11)
+    - URLImage/Log (= 2.1.11)
+    - URLImage/PlainDatabase (= 2.1.11)
+    - URLImage/RemoteContentView (= 2.1.11)
+  - URLImage/Common (2.1.11)
+  - URLImage/DownloadManager (2.1.11):
+    - URLImage/Log
+  - URLImage/FileIndex (2.1.11):
+    - URLImage/Common
+    - URLImage/Log
+    - URLImage/PlainDatabase
+  - URLImage/ImageDecoder (2.1.11)
+  - URLImage/Log (2.1.11)
+  - URLImage/PlainDatabase (2.1.11)
+  - URLImage/RemoteContentView (2.1.11)
+
+DEPENDENCIES:
+  - URLImage
+
+SPEC REPOS:
+  trunk:
+    - URLImage
+
+SPEC CHECKSUMS:
+  URLImage: 7252a655ba96827b6fab22c8f5bc17c6bbe16761
+
+PODFILE CHECKSUM: 57097818b4378c4f1831f89b960eb5ec03d2af46
+
+COCOAPODS: 1.10.0

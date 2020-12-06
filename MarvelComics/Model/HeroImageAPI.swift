@@ -7,8 +7,9 @@
 
 import Foundation
 
-public struct HeroImageAPI: Codable {
-    public let fileExtension: String?
+public struct HeroImageAPI: Codable, Identifiable {
+    public let id = UUID()
+    public let fileExtension: String
     
     private var _path: String!
     public var path: String? {
@@ -16,7 +17,7 @@ public struct HeroImageAPI: Codable {
     }
     
     public var url: URL? {
-        return URL(string: self.securePath(path: self._path) + "." + self.fileExtension!)
+        return URL(string: self.securePath(path: self._path) + "." + self.fileExtension)
     }
     
     
