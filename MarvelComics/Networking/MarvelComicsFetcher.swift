@@ -5,10 +5,6 @@ protocol MarvelComicsFetchable {
   func getHeroList(
     page: Int
   ) -> AnyPublisher<MarvelDataSetAPI, MarvelComicsError>
-
-  func getHeroDetail(
-    forHero heroId: String
-  ) -> AnyPublisher<HeroResume, MarvelComicsError>
 }
 
 class MarvelComicsFetcher {
@@ -73,10 +69,6 @@ extension MarvelComicsFetcher: MarvelComicsFetchable {
 
   func getHeroList(page: Int) -> AnyPublisher<MarvelDataSetAPI, MarvelComicsError> {
     return getHero(with: makeHeroesListComponents(page: page))
-  }
-
-  func getHeroDetail(forHero heroId: String) -> AnyPublisher<HeroResume, MarvelComicsError> {
-    return getHero(with: makeHeroesDetailsComponents(forHero: heroId))
   }
 
   private func getHero<T>(with components: URLComponents) -> AnyPublisher<T, MarvelComicsError> where T: Decodable {
