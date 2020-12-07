@@ -140,13 +140,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EB2A26DF257CE5950016C2AE /* HeroDetail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HeroDetail;
-			sourceTree = "<group>";
-		};
 		EB2A270A257DBE830016C2AE /* HeroesRow */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,7 +296,6 @@
 		EB66EA86257C9C9E0065D0CD /* Scenes&Boards */ = {
 			isa = PBXGroup;
 			children = (
-				EB2A26DF257CE5950016C2AE /* HeroDetail */,
 				EB66EA88257CAE760065D0CD /* HeroesList */,
 			);
 			path = "Scenes&Boards";

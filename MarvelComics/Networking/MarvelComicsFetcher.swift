@@ -9,7 +9,7 @@ protocol MarvelComicsFetchable {
 
 class MarvelComicsFetcher {
   private let session: URLSession
-  static let pageSize = 100
+  static let pageSize = 10
 
   init(session: URLSession = .shared) {
     self.session = session
