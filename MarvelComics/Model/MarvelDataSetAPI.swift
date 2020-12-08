@@ -12,7 +12,7 @@ public struct MarvelDataSetAPI: Codable {
   public let status: String?
   public let attributionText: String?
   
-  public let data: MarvelComicsResult
+  public var data: MarvelComicsResult
     
   enum CodingKeys: String, CodingKey {
         case code = "code"

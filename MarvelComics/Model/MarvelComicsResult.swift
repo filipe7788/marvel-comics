@@ -13,7 +13,7 @@ public struct MarvelComicsResult: Codable {
   public let limit: Int
   public let total: Int
   public let count: Int
-  let results: [HeroResume] 
+  var results: [HeroResume] 
     
   enum CodingKeys: String, CodingKey {
         case offset = "offset"

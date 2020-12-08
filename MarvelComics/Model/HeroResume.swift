@@ -12,6 +12,8 @@ struct HeroResume: Codable, Equatable, Identifiable {
   public let name: String?
   public let description: String?
   public let thumbnail: HeroImageAPI
+  
+  public var expand:Bool = false
   enum CodingKeys: String, CodingKey {
       case id = "id"
       case name = "name"

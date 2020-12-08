@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HeroesListView: View {
-  let heroes: [HeroResume]
+  var heroes: [HeroResume]
   let isLoading: Bool
   let onScrolledAtBottom: () -> Void
   
